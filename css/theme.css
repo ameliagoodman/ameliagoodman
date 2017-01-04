@@ -1,0 +1,155 @@
+/*
+ * Tech it Out 2016 theme
+ * Designed by Amelia Goodman.
+ * Made with luv and Bootstrap
+ * Theme colors:
+ *      light #9F8FB8;
+ *      dark  #2A0E39;
+ */
+
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/* ALL PAGES */
+body {
+	background-color: #9F8FB8;
+	color: white;
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-size: 1.15em;
+}
+.parallax-window {
+    min-height: 200px;
+    width: 100%;
+    background: transparent;
+}
+#header-img {
+    height: 500px;
+    background: transparent;
+    top: 0;
+    left: 0;
+}
+#divider {
+    margin-top:100px;
+    margin-bottom:100px;
+    height: 300px;
+}
+
+
+/* HOME PAGE */
+#header {
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/computer_smile.jpg') no-repeat center scroll;
+    background-size: cover;
+}
+#logo {
+    padding-top: 40vh;
+    width: 300px;
+}
+.sad_stats {
+    text-align: center;
+}
+.counter {
+  font-size:50px;
+  vertical-align: middle;
+}
+#home>.row {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#alumni_thought {
+    font-family: 'Montserrat', sans-serif;
+    color:#2A0E39;
+}
+
+
+/* NAV BAR */
+.nav-wrapper {
+    background-color: #2A0E39;
+    padding-left: 20px;
+}
+.nav-wrapper li:hover {
+    background-color: #9F8FB8;
+}
+#students-dropdown a{
+    color: black;
+}
+#sidenav-overlay {
+    z-index: 97;
+}
+#mobile-demo{
+    height: 250px !important;
+}
+
+
+/* ABOUT */
+.hideme {
+    opacity: 0;
+    color: #68A5E7;
+}
+.shadow {
+    box-shadow: -10px 16px 28px 0 rgba(0, 0, 0, 0.5), 10px 25px 55px 0 rgba(0, 0, 0, 0.4);
+    background-color: #2A0E39;
+    padding: 3%;
+}
+
+
+/* SCHEDULE */
+.staggered-sched>li{
+    opacity: 0;
+}
+.staggered-sched>li>h4 {
+    font-size: 1.4em;
+}
+@media only screen
+  and (max-device-width: 736px) {
+    #exploration-sched {
+        font-size: .7em;
+    }
+}
+
+/* STUDENTS & STAFF */
+#websites p{
+    color: #9F8FB8;
+}
+#bio {
+    font-family: 'Montserrat', sans-serif;
+}
+#bio h4 {
+    font-size: 1.7em;
+}
+#bio a {
+    color: #DFECFF;
+}
+
+@media only screen
+  and (max-device-width: 736px) {
+    #bio_img {
+        width: 100px;
+        margin-top:30px;
+    }
+    #name{
+        font-size: 1.3em;
+    }
+    #bio>h4 {
+        font-size: 1em;
+    }
+
+}
+
+
+/* FOOTER */
+footer.page-footer {
+    padding: 10px;
+    background-color:#615377;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #9F8FB8;
+    font-family: 'Montserrat', sans-serif;
+}
+
