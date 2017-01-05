@@ -20,6 +20,7 @@ a:focus {
 /*NAV BAR*/
 .nav-wrapper {
     padding-left:3%;
+    padding-right:3%;
     background-color: black;
 }
 .nav-wrapper a:hover {
@@ -60,71 +61,6 @@ a:focus {
     -webkit-text-stroke: 1px #99ccff;
 }
 
-
-.cswk-head {
-    background-image: url('../image/flower2.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 7%;
-    background-attachment: fixed;
-    height: 140px;
-    width: 125%;
-    margin-left: -13%;
-}
-
-.proj-head {
-    background-image: url('../image/leaves.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 7%;
-    background-attachment: fixed;
-    height: 140px;
-    width: 125%;
-    margin-left: -13%;
-}
-
-.work-head {
-    background-image: url('../image/sunset.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 7%;
-    background-attachment: fixed;
-    height: 140px;
-    width: 125%;
-    margin-left: -13%;
-    margin-bottom: 3%;
-}
-
-.about-head {
-    background-image: url('../image/eye.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 7%;
-    background-attachment: fixed;
-    height: 140px;
-    width: 125%;
-    margin-left: -13%;
-    margin-bottom: 3%;
-}
-
-
-@media(min-width:768px) {
-    .cswk-head {
-        height: 400px;
-    }
-    .proj-head {
-        height: 400px;
-    }
-    .work-head {
-        height: 400px;
-        background-position: 0 80%;
-    }
-    .about-head {
-        height: 400px;
-        background-position: 0 95%;
-    }
-}
-
 .projects img {
     transition: all .35s ease-in-out;
 }
@@ -139,6 +75,12 @@ a:focus {
     margin-left: 5%;
     margin-top: 3%;
     margin-bottom: 3%;
+}
+
+/* ART */
+#instafeed>a>img {
+    width: 50%;
+    padding:25px;
 }
 
 /*Footer*/
