@@ -13,5 +13,6 @@ $(document).ready(function() {
   lightGallery(document.getElementById('lightgallery3'));
   lightGallery(document.getElementById('lightgallery4'));
   lightGallery(document.getElementById('lightgallery5'));
+  lightGallery(document.getElementById('lightgallery6'));
 });
 
