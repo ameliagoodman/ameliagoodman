@@ -1,27 +1,17 @@
 $(document).ready(function() {
 
-  // Closes the Responsive Menu on Menu Item Click
-  $('.navbar-collapse ul li a').click(function() {
-      $('.navbar-toggle:visible').click();
-  });
+  // tabs
+  $('ul.tabs').tabs();
 
-  // responsive menu
-  $(".button-collapse").sideNav();
+  // photo enlarge
+  $('.materialboxed').materialbox();
 
-
-  // smooth scroll
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-
+  // gallery plugin
+  lightGallery(document.getElementById('lightgallery'));
+  lightGallery(document.getElementById('lightgallery1'));
+  lightGallery(document.getElementById('lightgallery2'));
+  lightGallery(document.getElementById('lightgallery3'));
+  lightGallery(document.getElementById('lightgallery4'));
+  lightGallery(document.getElementById('lightgallery5'));
 });
 

@@ -1,13 +1,13 @@
 body {
-    background-color: #000;
+    background-color: #fff;
     font-family: 'Raleway', sans-serif;
-    color: #fff;
+    color: #000;
 }
 p {
     font-size: 1.2em;
 }
 a {
-    color: #99ccff;
+    color: #00005A;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -18,22 +18,15 @@ a:focus {
 }
 
 /*NAV BAR*/
-.nav-wrapper {
-    padding-left:3%;
-    padding-right:3%;
-    background-color: black;
-}
-.nav-wrapper a:hover {
-    color: #99ccff;
-}
-#sidenav-overlay {
-    z-index: 97;
-}
-#mobile-demo{
-    height: 150px !important;
-}
 .active{
-    background-color: #757575 !important;
+    color: #8D005F;
+}
+.nav {
+    font-size: 1.3em;
+}
+#title {
+    color: #00005A;
+    font-family: 'Barrio', cursive;
 }
 
 
@@ -61,11 +54,31 @@ a:focus {
     -webkit-text-stroke: 1px #99ccff;
 }
 
-.projects img {
-    transition: all .35s ease-in-out;
+/* ART */
+.tabs {
+    background-color: #00005A;
 }
-.projects img:hover {
-    transform: scale(1.3);
+.tabs .indicator {
+    background-color: #00b8d4 !important;
+}
+.tabs .tab a {
+    color: #00b8d4;
+}
+.tabs .tab a.active {
+    color: #00e5ff;
+}
+.tabs .tab a:hover {
+    color: #00e5ff;
+}
+#instafeed>a>img {
+    width: 50%;
+    padding:25px;
+}
+
+
+/* PROJECTS */
+.projects a {
+    color: #00b8d4;
 }
 
 .divider {
@@ -75,12 +88,6 @@ a:focus {
     margin-left: 5%;
     margin-top: 3%;
     margin-bottom: 3%;
-}
-
-/* ART */
-#instafeed>a>img {
-    width: 50%;
-    padding:25px;
 }
 
 /*Footer*/

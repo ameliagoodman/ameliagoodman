@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Amelia Goodman">
+    <meta name="author" content="Amelia Goodman">
 
     <title>Amelia Goodman</title>
 
     <!-- Materialize CSS -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- gallery css -->
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+
+
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -19,6 +24,7 @@
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet" type='text/css'>
 
     <!-- instafeed -->
@@ -38,32 +44,192 @@
 </head>
 
 <body>
-<div class="navbar-fixed">
-    <nav role="navigation">
-        <div class="nav-wrapper">
-            <a class="brand-logo" href="index.html">Amelia Goodman</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-            <ul class="right hide-on-med-and-down">
-                <li><a href="coursework.html">Coursework</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="work.html">Work Experience</a></li>
-                <li class="active"><a href="#">Art</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="coursework.html">Coursework</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="work.html">Work Experience</a></li>
-                <li class="active"><a href="#">Art</a></li>
-            </ul>
+<div class="header container">
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <img src="image/me&frank.png" width="100%">
         </div>
-    </nav>
+    </div>
+    <div class="row center-align">
+        <h1 id="title">Amelia Goodman</h1>
+    </div>
+    <div class="row center-align nav">
+        <div class="col s4">
+            <a href="index.html">About</a>
+        </div>
+        <div class="col s4">
+            <a href="#" class="active">Art</a>
+        </div>
+        <div class="col s4">
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
 </div>
-
 
 <div class="container">
-    <div id="instafeed"></div>
-</div>
+    <div class="row center-align">
+        <img src="image/art.gif" width="30%">
+    </div>
+    <div class="row">
+        <ul class="tabs tabs-fixed-width">
+            <li class="tab col s3"><a class="active" href="#photos">Photography</a></li>
+            <li class="tab col s3"><a href="#prints">Prints</a></li>
+            <li class="tab col s3"><a href="#etsy">Etsy</a></li>
+            <li class="tab col s3"><a href="#writing">Writing</a></li>
+        </ul>
+    </div>
+    <div id="photos" class="col s12">
+        <div class="container">
+            <div id="instafeed"></div>
+        </div>
+    </div>
+    <div id="prints" class="col s12">
+        <h3>Sight//Light</h3>
+        <p>A series of prints exploring light and sight. I used a brain stencil that I drew and laser cut, salt, and ink. This is a monotype print.</p>
+        <div id="brain-caption1" style="display:none">
+            <h4>Bullseye</h4>
+            <p>Monotype print of brain. Used salt to create texture and inked brain stencil.</p>
+        </div>
+        <div id="brain-caption2" style="display:none">
+            <h4>Brain</h4>
+            <p>Monotype print of brain. Used inked brain stencil with "vision" section removed.</p>
+        </div>
+        <div id="brain-caption3" style="display:none">
+            <h4>Brain</h4>
+            <p>Monotype print of brain. Used inked brain stencil with "vision" section removed and layered salts for texture.</p>
+        </div>
+        <div id="brain-caption4" style="display:none">
+            <h4>Brain</h4>
+            <p>Monotype print of brain. Used inked brain stencil with "vision" section removed and layered miscellaneous objects for underlying texture.</p>
+        </div>
+        <div id="brain-caption5" style="display:none">
+            <h4>Brain</h4>
+            <p>Monotype print of brain. Used inked brain stencil with "vision" section removed and direct-plate painting for the lightbulb.</p>
+        </div>
+        <div id="lightgallery" class="center-align">
+            <a href="image/brain1.jpg" data-sub-html="#brain-caption1">
+              <img src="image/thumb-brain1.jpg" />
+          </a>
+          <a href="image/brain2.jpg" data-sub-html="#brain-caption2">
+              <img src="image/thumb-brain2.jpg" />
+          </a>
+          <a href="image/brain3.jpg" data-sub-html="#brain-caption3">
+              <img src="image/thumb-brain3.jpg" />
+          </a>
+          <a href="image/brain4.jpg" data-sub-html="#brain-caption4">
+              <img src="image/thumb-brain4.jpg" />
+          </a>
+          <a href="image/brain5.jpg" data-sub-html="#brain-caption5">
+              <img src="image/thumb-brain5.jpg" />
+          </a>
+        </div>
+
+        <div class="divider"></div>
+        <h3>Texture</h3>
+        <p>A series of prints exploring texture. I used miscellaneous items (dried orange slice, bubble wrap, flower petals, etc) to create new shapes and textures. This is a monotype print.</p>
+        <div id="texture-caption1" style="display:none">
+            <h4>Texture</h4>
+            <p>Monotype print using found objects.</p>
+        </div>
+        <div id="lightgallery1" class="center-align">
+            <a href="image/texture1.jpg" data-sub-html="#texture-caption1">
+              <img src="image/thumb-texture1.jpg" />
+          </a>
+          <a href="image/texture2.jpg" data-sub-html="#texture-caption1">
+              <img src="image/thumb-texture2.jpg" />
+          </a>
+        </div>
+
+        <div class="divider"></div>
+        <h3>Love</h3>
+        <p>I made this print around Valentine's day while considering the heart as a sex organ. The woman pictured is stimulating her own heart, floating in a space of heartbeats. This is an intaglio print.</p>
+        <div id="love-caption1" style="display:none">
+            <h4>Love</h4>
+            <p>Intaglio print of woman stimulating her own heart.</p>
+        </div>
+        <div id="lightgallery2" class="center-align">
+            <a href="image/love1.jpg" data-sub-html="#love-caption1">
+              <img src="image/thumb-love1.jpg" />
+          </a>
+          <a href="image/love2.jpg" data-sub-html="#love-caption1">
+              <img src="image/thumb-love2.jpg" />
+          </a>
+        </div>
+
+        <div class="divider"></div>
+        <h3>Frida Kahllage</h3>
+        <p>A collage of some of my favorite things: Frida Kahlo, Seltzer, The NY Times mini crossword puzzle, the word bitch, succulents, and side eyes. This is a CMYK screen print in a series of 5.</p>
+        <div id="frida-caption1" style="display:none">
+            <h4>Frida Kahllage</h4>
+            <p>CMYK screen print of 5 featuring some of my favorite things.</p>
+        </div>
+        <div id="lightgallery3" class="center-align">
+            <a href="image/frida1.jpg" data-sub-html="#frida-caption1">
+              <img src="image/thumb-frida1.jpg" />
+          </a>
+          <a href="image/frida2.jpg" data-sub-html="#frida-caption1">
+              <img src="image/thumb-frida2.jpg" />
+          </a>
+        </div>
+
+        <div class="divider"></div>
+        <h3>Self Portrait</h3>
+        <p>A whimsical self portrait of me as an octopus reading in the bath. Inspired by five random images I came across, I threw them together in a bathroom scene. When I read I like to underline my favorite lines and write illegible nonsense in the margins. This is a 7-layer screen print in a series of 8.</p>
+        <div id="octopus-caption1" style="display:none">
+            <h4>Self Portrait</h4>
+            <p>7-layer screen print of me as an octopus reading in the bath.</p>
+        </div>
+        <div id="lightgallery4" class="center-align">
+            <a href="image/octopus1.jpg" data-sub-html="#octopus-caption1">
+              <img src="image/thumb-octopus1.jpg" />
+          </a>
+          <a href="image/octopus2.jpg" data-sub-html="#octopus-caption1">
+              <img src="image/thumb-octopus2.jpg" />
+          </a>
+        </div>
+
+        <div class="divider"></div>
+        <h3>Feminist Paraphenalia</h3>
+        <p>A multi-media series: a canvas tote bag, a t-shirt, and a poster. The canvas tote references Judith Butler's conception of gender as performance, as well as <i>Ru Paul's Drag Race</i> a favorite show of mine. In the queen's waves reads "gender is performance." The t-shirt juxtaposes stereotypical girlish cartoons and realistic images from a young woman's life: high heels, long lashes, a bunny contrasted with bloody tampons, a joint, an electric guitar. The answer to Beyoncé's question: "Who run the world?" is of course "GIRLS." I drew and then silk screened both the tote and t-shirt. Finally, the poster addresses a gendered accusation of being too loud, having too many feelings: "Uppity." I used various fonts and framing to surround the word to print through the letterpress. I intended for the romanticism of the letterpress to juxtapose the insulting nature of the word.</p>
+        <div id="feminist-caption1" style="display:none">
+            <h4>Feminist Paraphenalia</h4>
+            <p>Screen print on canvas tote that reads "Gender is Performance."</p>
+        </div>
+        <div id="feminist-caption2" style="display:none">
+            <h4>Feminist Paraphenalia</h4>
+            <p>Screen print on t-shirt that reads "Who run the world?" surrounded by cartoons of stereotypically girly images.</p>
+        </div>
+        <div id="feminist-caption3" style="display:none">
+            <h4>Feminist Paraphenalia</h4>
+            <p>Letterpress on poster that reads "Uppity."</p>
+        </div>
+        <div id="lightgallery5" class="center-align">
+            <a href="image/feminist1.jpg" data-sub-html="#feminist-caption1">
+              <img src="image/thumb-feminist1.jpg" />
+          </a>
+          <a href="image/feminist2.jpg" data-sub-html="#feminist-caption1">
+              <img src="image/thumb-feminist2.jpg" />
+          </a>
+          <a href="image/feminist3.jpg" data-sub-html="#feminist-caption2">
+              <img src="image/thumb-feminist3.jpg" />
+          </a>
+          <a href="image/feminist4.jpg" data-sub-html="#feminist-caption2">
+              <img src="image/thumb-feminist4.jpg" />
+          </a>
+          <a href="image/feminist5.jpg" data-sub-html="#feminist-caption3">
+              <img src="image/thumb-feminist5.jpg" />
+          </a>
+        </div>
+    </div>
+    <div id="etsy" class="col s12 center-align">
+        <p> I co-run an Etsy store called <a href="https://www.etsy.com/shop/laseretchcrafts" target="_blank" style="color:#00b8d4">EtchCrafts</a> where I design iPhone cases and earrings. For the cases, I sketch, prototype, and laser cut patterns into bamboo cases. For the earrings, I laser cut, hand paint, and seal different shapes and designs.</p>
+        <script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script><script type='text/javascript'>new Etsy.Mini(11424769,'gallery',4,4,0,'https://www.etsy.com');</script>
+    </div>
+    <div id="writing" class="col s12">
+        <h4><a href="https://medium.com/@ameliagoodman/on-being-told-to-include-men-in-an-all-women-hackathon-221a71564324" target="_blank">"On Being Told to Include Men in an All-Women* Hackathon"</a></h4>
+        <p>My recounting of one particular mansplainer that went too far.</p>
+    </div>
+  </div>
 </body>
 
 <footer>
@@ -75,7 +241,7 @@
             </div>
             <div clas="col s2">
                 <ul class="connect">Connect:
-                    <li><a href="mailto:ameliago@sas.upenn.edu" target="_blank"><i class="fa fa-envelope-o fa-fw" ></i>Email</a>
+                    <li><a href="mailto:amelia.goodman1@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-fw" ></i>Email</a>
                     </li>
                     <li><a href="https://instagram.com/amelia.good" target="_blank"><i class="fa fa-instagram fa-fw"></i>Insta</a>
                     </li>
@@ -89,7 +255,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
-<script src="js/parallax.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>
 <script src="js/theme.js"></script>
 
 </html>
