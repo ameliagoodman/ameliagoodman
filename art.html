@@ -26,21 +26,6 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet" type='text/css'>
-
-    <!-- instafeed -->
-    <script type='text/javascript' src='js/config.js'></script>
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
-    <script type="text/javascript">
-        var feed = new Instafeed({
-            get: 'user',
-            userId: config.USER_ID,
-            clientId: config.CLIENT_ID,
-            accessToken: config.ACCESS_TOKEN,
-            template: '<a class="animation" href="{{link}}"><img src="{{image}}"/></a>',
-            resolution: 'standard_resolution'
-        });
-        feed.run();
-    </script>
 </head>
 
 <body>
@@ -79,6 +64,11 @@
     <div id="photos" class="col s12">
         <div class="container">
             <div id="instafeed"></div>
+            <div class="row" id="loading">
+            <div class="col s4 offset-s4">
+              <a href="#loading"><img id="load-more" src="image/load_more.png"></a>
+            </div>
+            </div>
         </div>
     </div>
     <div id="prints" class="col s12">
@@ -289,5 +279,30 @@
 <script src="js/lightgallery.min.js"></script>
 <script src="js/lg-thumbnail.min.js"></script>
 <script src="js/theme.js"></script>
+<!-- instafeed -->
+<script type='text/javascript' src='js/config.js'></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript">
+    var loadButton = document.getElementById('load-more');
+    console.log(loadButton);
+    var feed = new Instafeed({
+        after: function() {
+            // disable button if no more results to load
+            if (!this.hasNext()) {
+                loadButton.setAttribute('disabled', 'disabled');
+            }
+        },
+        get: 'user',
+        userId: config.USER_ID,
+        clientId: config.CLIENT_ID,
+        accessToken: config.ACCESS_TOKEN,
+        template: '<a class="animation" href="{{link}}"><img src="{{image}}"/></a>',
+        resolution: 'standard_resolution'
+    });
+    loadButton.addEventListener('click', function() {
+        feed.next();
+    });
+    feed.run();
+</script>
 
 </html>

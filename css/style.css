@@ -55,6 +55,9 @@ a:focus {
 }
 
 /* ART */
+#load-more {
+    width: 100%;
+}
 .tabs {
     background-color: #00005A;
 }
