@@ -50,6 +50,10 @@ a:focus {
 #social_media {
     font-size: 2em;
 }
+#social_icons a {
+    padding: 0% 5% 0% 5%;
+}
+
 #divider{
     min-height: 300px;
     text-align: center;
