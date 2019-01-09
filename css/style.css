@@ -7,17 +7,17 @@ p {
     font-size: 1.2em;
 }
 a {
-    color: #00005A;
+    color: #BA4A84;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    text-decoration: underline;
 }
 a:hover,
 a:focus {
-    text-decoration: none;
+    color: #ad000e;
 }
 
-/*NAV BAR*/
 .active{
     color: #8D005F;
 }
@@ -25,8 +25,11 @@ a:focus {
     font-size: 1.3em;
 }
 #title {
-    color: #00005A;
+    color: #970003;
     font-family: 'Barrio', cursive;
+}
+#subhead {
+    color: #672626;
 }
 
 
@@ -53,45 +56,20 @@ a:focus {
     color: black;
     -webkit-text-stroke: 1px #99ccff;
 }
-
-/* ART */
-#load-more {
-    width: 100%;
-}
-.tabs {
-    background-color: #00005A;
-}
-.tabs .indicator {
-    background-color: #00b8d4 !important;
-}
-.tabs .tab a {
-    color: #00b8d4;
-}
-.tabs .tab a.active {
-    color: #00e5ff;
-}
-.tabs .tab a:hover {
-    color: #00e5ff;
-}
-#instafeed>a>img {
-    width: 50%;
-    padding:25px;
+#filler {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    max-height:400px;
 }
 
-
-/* PROJECTS */
-.projects a {
-    color: #00b8d4;
+/*responsive filler*/
+@media only screen and (max-width: 600px) {
+    #filler {
+        display: none;
+    }
 }
 
-.divider {
-    height: 2px;
-    background-color: #99ccff;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
 
 /*Footer*/
 footer{
