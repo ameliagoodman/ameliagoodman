@@ -51,7 +51,13 @@ a:focus {
     font-size: 2em;
 }
 #social_icons a {
-    padding: 0% 5% 0% 5%;
+    padding: 0% 3% 0% 3%;
+}
+
+@media only screen and (min-width: 600px) {
+    #social_icons a {
+        padding: 0% 5% 0% 5%;
+    }
 }
 
 #divider{
